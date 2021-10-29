@@ -1,0 +1,103 @@
+[
+    {
+        "label": "Código",
+        "name": "id",
+        "desc": "Código do Cliente",
+        "bclass": "col-md-1",
+        "type": "input-text",
+        "attribs": {
+            "readonly": "readonly"
+        }
+    },
+    {
+        "label": "Nº Frota",
+        "name": "numero_frota",
+        "desc": "Identificação do veiculo na frota ",
+        "bclass": "col-md-2",
+        "type": "input-text"
+    },
+    {
+        "label": "Placa/Série",
+        "name": "placa",
+        "desc": "Placa do Veículo ou Número de série",
+        "bclass": "col-md-2",
+        "type": "input-text"
+    },
+    {
+        "label": "Tipo",
+        "name": "tipo_id",
+        "desc": "Tipo de veículo",
+        "bclass": "col-md-2",
+        "type": "input-tipo-veiculos"
+    },
+    {
+        "label": "Marca",
+        "name": "marca_id",
+        "desc": "Marca",
+        "bclass": "col-md-2",
+        "type": "input-marcas"
+    },
+    {
+        "label": "Modelo",
+        "name": "modelo_id",
+        "desc": "Modelo",
+        "bclass": "col-md-3",
+        "type": "input-modelos",
+        "bind": [
+            "marca_id"
+        ]
+    },
+    {
+        "label": "Ano Modelo",
+        "name": "ano_modelo",
+        "desc": "Ano Modelo",
+        "bclass": "col-md-2",
+        "type": "input-text"
+    },
+    {
+        "label": "Renavan",
+        "name": "renavan",
+        "desc": "Renavan",
+        "bclass": "col-md-5",
+        "type": "input-text"
+    },
+    {
+        "label": "Combustivel",
+        "name": "combustivel",
+        "desc": "Combustivel",
+        "bclass": "col-md-2",
+        "type": "input-text"
+    },
+    {
+        "label": "Cor",
+        "name": "cor",
+        "desc": "Cor",
+        "bclass": "col-md-2",
+        "type": "input-text"
+    },
+    {
+        "label": "Rastreador",
+        "name": "rastreador_esn",
+        "desc": "Rastreador",
+        "bclass": "col-md-4",
+        "type": "input-rastreador"
+    },
+    {
+        "label": "Status",
+        "name": "status",
+        "desc": "Status do Veículo",
+        "bclass": "col-md-3",
+        "type": "input-select",
+        "options": [
+            "ATIVO",
+            "INATIVO"
+        ]
+    },
+    {
+        "label": "Outras Informações",
+        "name": "info",
+        "desc": "Outras Informações",
+        "bclass": "col-md-12",
+        "type": "input-textarea"
+    }
+]

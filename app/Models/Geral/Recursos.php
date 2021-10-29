@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models\Geral;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Recursos extends Model
+{
+    protected $table = 'geral_recursos';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [];
+
+    /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = [];
+
+
+}

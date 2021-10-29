@@ -1,0 +1,10 @@
+## dados basicos da sessao
+GET https://illuminarti.com.br//api/info-sessao?cliente_id=null&authorization=9Nb9T33GIjj5ya9DxEz7MWRDKOpxHHrZ
+Content-Type: application/json
+###
+
+## TESTE API
+## dados basicos da sessao
+GET https://illuminarti.com.br//api/info-sessao?cliente_id=null&authorization=9Nb9T33GIjj5ya9DxEz7MWRDKOpxHHrZ
+Content-Type: application/json
+###

@@ -1,0 +1,40 @@
+body.modo-noturno {
+
+    .lk_nr_chamado,
+    .concluido,
+    .finalizado,
+    .status_ce {
+        color: #fff !important;
+    }
+
+    #justificativa_iteracao_chamado {
+        background-color: transparent !important;
+    }
+
+    .historicoChamado {
+        div,.list-group-item{
+            background-color: #131c21!important;
+            border: none !important;
+            color: #fff !important;
+        }
+
+
+
+        background-color: #302e2e !important;
+    }
+
+    .timeline-item:before {
+        background-color: transparent !important;
+        border: 1px solid grey !important;
+    }
+
+    .tss {
+        color: #48a6bc !important;
+    }
+
+    #topo-hist-chamado ul > a {
+        color: #fff!important;
+    }
+
+
+}

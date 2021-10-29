@@ -1,0 +1,229 @@
+body.modo-noturno {
+
+    color: #fff;
+
+    .navbar.bg-white {
+        background-color: #2a2f32 !important;
+    }
+
+    .bg-white {
+        background-color: #2a2f32 !important;
+    }
+
+    .dropdown-menu {
+        background-color: #2a2f32 !important;
+        color: #fff;
+
+        .dropdown-item {
+            color: #fff;
+        }
+
+        .dropdown-item:hover {
+            background-color: #000;
+        }
+
+    }
+
+    .text-info {
+        color: #fff;
+    }
+
+    .topbar .dropdown-list .dropdown-header {
+        background-color: #2a2f32;
+        border: 1px solid #ffffff52 !important;
+    }
+
+    #accordionSidebar {
+
+        background-color: #131c21 !important;
+
+        .bg-white {
+            background-color: transparent !important;
+            border: 1px solid #ffffff52 !important;
+
+            a {
+                color: #fff !important;
+            }
+        }
+
+        .collapse-item:hover {
+            background-color: #000;
+        }
+    }
+
+    #wrapper #content-wrapper {
+        background-color: #2a2f32eb !important;
+    }
+
+    /**
+    * Cards
+     */
+
+    .card {
+        border: 1px solid #ffffff52;
+        background-color: #2a2f32eb;
+
+        .card-header {
+            background-color: #2a2f32;
+            color: #fff;
+            border-bottom: 1px solid #ffffff52;
+
+            .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+                background-color: #2a2f32;
+                color: #fff;
+            }
+
+        }
+
+        .tabs {
+            .card-header {
+                border: none;
+                border-bottom: none;
+            }
+        }
+
+        .card-footer {
+            padding: 0.75rem 1.25rem;
+            background-color: #2a2f32;
+            border-top: 1px solid #ffffff52;
+        }
+
+    }
+
+    .form-control {
+        background-color: #2a2f32;
+        border: 1px solid #ffffff52;
+    }
+
+    .btn-primary, .btn-info, .btn-secondary {
+        color: #fff;
+        background-color: #2a2f32eb;
+        border-color: #ffffff52;
+    }
+
+    .btn-danger {
+        color: #fff;
+        background-color: #2a2f32eb;
+        border-color: #ffffff52;
+    }
+
+    .btn-warning, .btn-success {
+        color: #fff;
+        background-color: #2a2f32eb;
+        border-color: #ffffff52;
+    }
+
+    .badge-info {
+        color: #fff;
+        border: 1px solid #ffffff52;
+        background-color: #2a2f32eb;
+    }
+
+    input:-webkit-autofill {
+        background-color: transparent;
+    }
+
+    /**
+    modal
+     */
+    .modal-content {
+        background-color: #151719;
+        border: 1px solid #ffffff6b;
+    }
+
+
+    /**
+    lists
+     */
+    .list-group-item {
+        background-color: transparent;
+    }
+
+    /**
+       * tabelas
+     */
+
+    .table {
+        color: #fff;
+    }
+
+    /**
+    * outros components
+     */
+
+    .vs__dropdown-toggle {
+        border: 1px solid #ffffff52;
+        color: #fff;
+
+        .vs__selected {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+
+    .vs__search, .vs--disabled .vs__dropdown-toggle {
+        background-color: #2a2f32eb !important;
+    }
+
+    .vs--disabled .vs__clear, .vs--disabled
+    .vs__dropdown-toggle, .vs--disabled
+    .vs__open-indicator,
+    .vs--disabled .vs__search, .vs--disabled .vs__selected {
+        background-color: transparent;
+    }
+
+    .vs__dropdown-option, .vs__dropdown-menu {
+        background-color: #2a2f32eb;
+        border: 1px solid #ffffff52;
+        color: #fff;
+    }
+
+    body.modo-noturno .vs__dropdown-toggle .vs__selected {
+        background-color: #2a2f32eb!important;
+    }
+
+    .custom-select {
+        background-color: #2a2f32eb;
+    }
+
+    .input-group-text {
+        background-color: transparent;
+        border: 1px solid #ffffff52;
+    }
+
+    /**
+    * boostrap datepicker
+     */
+    .vdatetime-popup__header,
+    .vdatetime-calendar__month__day--selected > span > span,
+    .vdatetime-calendar__month__day--selected:hover > span > span {
+        background: #FF9800;
+    }
+
+    .vdatetime-year-picker__item--selected,
+    .vdatetime-time-picker__item--selected,
+    .vdatetime-popup__actions__button {
+        color: #ff9800;
+    }
+
+    /**
+        ck editor
+     */
+    .ck.ck-editor__main > .ck-editor__editable, .ck.ck-toolbar {
+        background: #2a2f32eb;
+        border: 1px solid #ffffff52;
+
+    }
+
+    .ck.ck-reset_all, .ck.ck-reset_all * {
+        color: #ffffff52;
+    }
+
+    /**
+    switch alert
+     */
+    .swal2-popup {
+        background: #2a2f32eb;
+        border: 1px solid #ffffff52;
+    }
+}

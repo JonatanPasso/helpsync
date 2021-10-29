@@ -1,0 +1,95 @@
+[
+    {
+        "label": "Código",
+        "name": "id",
+        "desc": "Código do Rastreador",
+        "bclass": "col-md-1",
+        "type": "InputText",
+        "attribs": {
+            "readonly": "readonly"
+        }
+    },
+    {
+        "label": "Modelo",
+        "name": "modelo",
+        "desc": "Modelo de Rastreador",
+        "bclass": "col-md-3",
+        "type": "InputModelosRastreador"
+    },
+    {
+        "label": "ID EQUIPAMENTO",
+        "name": "esn",
+        "desc": "ID EQUIPAMENTO",
+        "bclass": "col-md-3",
+        "type": "InputMask",
+        "attribs": {
+            "mask": "###############"
+        }
+    },
+    {
+        "label": "IMEI",
+        "name": "imei",
+        "desc": "Código IMEI",
+        "bclass": "col-md-3",
+        "type": "InputMask",
+        "attribs": {
+            "mask": "######-##-######-#"
+        },
+        "filtros": "digitos"
+    },
+    {
+        "label": "Nº CHIP",
+        "name": "fone_chip_gsm",
+        "desc": "Número fone do chip",
+        "bclass": "col-md-2",
+        "type": "input-fone",
+        "filtros": "digitos"
+    },
+    {
+        "label": "ICCID",
+        "name": "iccid",
+        "desc": "ICCID",
+        "bclass": "col-md-3",
+        "type": "InputMask",
+        "attribs": {
+            "mask": "#####################"
+        }
+    },
+    {
+        "label": "Operadora Gsm",
+        "name": "operadora_gsm",
+        "desc": "Operadora Gsm",
+        "bclass": "col-md-2",
+        "type": "InputSelect",
+        "options": [
+            "CLARO",
+            "VIVO",
+            "OI",
+            "TIM",
+            "NEXTEL",
+            "ALGAR"
+        ]
+    },
+    {
+        "label": "Estoque",
+        "name": "estoque",
+        "desc": "Estoque",
+        "bclass": "col-md-2",
+        "type": "InputMask",
+        "attribs": {
+            "mask": "#########"
+        }
+    },
+    {
+        "label": "Status",
+        "name": "status",
+        "desc": "Status do Rastreador",
+        "bclass": "col-md-3",
+        "type": "InputSelect",
+        "options": [
+            "ATIVO",
+            "BLOQUEADO",
+            "INATIVO"
+        ]
+    }
+]
