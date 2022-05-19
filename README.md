@@ -30,20 +30,73 @@ Para execução do projeto será necessário a instalação e configuração das
 
 O passo a passo aqui descrito é para instalação com sistema operaicional LINUX.
 
-Instalação NODE:
-   Sugiro a instação do NVM, e assim instalar o node com a versão desejada.
+Install NVM (automático):
+
+1. SSH para o servidor.
+2. Instale o NVM.
+   
    ```
-   $ sudo apt install nodejs -y
+   $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
    ```
-Instalação NPM:
-   ```
-   $ sudo apt install npm -y
-   ```
+   
+Instalar NVM (manual):
+
+1. SSH para o servidor.
+2. Instale o NVM. O comando a seguir instala a versão mais recente do NVM no $HOME/.nvm.
+
+```$ export NVM_DIR="$HOME/.nvm" && (
+    git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+    cd "$NVM_DIR"
+    git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+  ) && \. "$NVM_DIR/nvm.sh"
+  ``` 
+  
+3. Edite seu ~/.bashrc arquivo:
+
+```
+$ nano ~/.bashrc
+```
+
+Adicione as seguintes linhas no final do arquivo:
+
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+4. Salve e saia do arquivo.
+5. Recarregue o seu ~/.bashrcpara ativar o NVM.
+
+```
+$ source ~/.bashrc
+```
+
+6. Verifique se o NVM está instalado.
+
+```
+nvm -v
+0.38.0
+```
+
+Instalar o Node.JS:
+---
+
+Para instalar uma versão específica do Node.JS, especifique o número da versão desejada.
+
+```
+nvm install 14 ( Versão do Node que desejar )
+nvm use 14 ( Caso tenha mais de uma versão é só colocar qual deseja usar )
+```
+
+Verifique a versão do node
+
+```
+node -v
+```
 
 Realizado as devidas instalações, basta executar o composer.
 Abra o seu terminal do diretório do projeto e execute o seguinte comando.
    ```
-   php composer install -vvv
+   composer install -vvv
    ```
 Caso prefira usar o arquivo .phar do composer, basta executar o seguinte comando. Lembrando que o mesmo deverá estar 
 na raiz do projeto.
@@ -54,9 +107,15 @@ na raiz do projeto.
 O projeto também consta com uma ferramenta que é o WebPack, sendo assim é necessário rodar o seguinte comando.
 Abra o terminal no diretório do projeto e execute. (Obs.: Dependendo da IDE dá para configurar para que não fique 
 digitando o comando.)
-   ```
-   npm run watch
-   ```
+
+Para execução do script de build, deve se estar no seguinte diretório.
+
+```
+public/webapp
+
+Execute: npm run build
+```
+   
 Servidor:
 ---
 Hoje o projeto não está configurado com docker, mais está sendo preparado para isso.
@@ -65,14 +124,13 @@ No entanto pode-se usar qualquer servidor para testar o sistema.
 
 Para um primeiro momento pode se usar o Server do php usando o seguinte comando.
 
-Como não foi configurado nenhum host para o projeto é importante que esse comando seja executando no seguinte diretório URL/public.
+Como não foi configurado nenhum host para o projeto é importante que esse comando seja executando no seguinte diretório URL/public. 
 
-É importante avisar que 
-
-   ```
-  sudo php -S 127.0.0.1:80
-   ```
-Dessa forma basta abrir no seu browser <a href="http://127.0.0.1:80">http://127.0.0.1</a>
+ ```
+ sudo php -S 127.0.0.1:8080
+ ```
+ 
+Dessa forma basta abrir no seu browser <a href="http://127.0.0.1:8080">http://127.0.0.1</a>
 
 Bando de dados:
 ---
@@ -94,17 +152,14 @@ Para criação do banco e tabelas basta configurar o arquivo .env e executar as 
 Features:
 ---
 
+- [x] Cadastro de atividades
+- [x] Cadastro de subatividades
+- [x] Cadastro de empresas
+- [x] Cadastro de departamentos
 - [x] Cadastro de usuário
-- [x] Cadastro de cliente
-- [ ] Cadastro de profissionais
-- [ ] Cadastro de locais de atendimento
-- [ ] Atendimento médico
-- [ ] Anamnese
-- [ ] Faturamento
-- [ ] Relatórios
-- [ ] Dashboard
-- [ ] Permissões
-- [ ] Bulário
+- [x] Cadastro de permissões
+- [x] Abertura de chamado
+- [x] Relatórios
 
 Tecnologias
 ---
@@ -116,17 +171,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [PHP](https://www.php.net/)
 - [RabbitMQ](https://www.rabbitmq.com/)
-
-Contribuições
----
-
-<div class="row">
-    <div class="col-md-6"></div>
-</div>
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/53622768?v=4" width="100px;" alt=""/>
-<br />
-<sub><b><h3>Fabio Cantarelli</b></sub>
-
 
 
 Autor
